@@ -1,18 +1,53 @@
-import { useContext } from 'react'
+import { useContext,useRef,useState} from 'react'
 import './css/navbar.css'
 import { searchcontex } from '../contexts/inputContext'
 
 export default function Navbar(){
-    const {inputSearch, setInputSearch} = useContext(searchcontex)
+    const {inputSearch, setInputSearch, getName} = useContext(searchcontex)
+    const history = useRef([])
+    const [showhint,setshowhint] = useState(false)
+    const [showHistory, setShowHistory]= useState([])
+
+    const hints = inputSearch && getName.length > 0 ? getName.filter(name =>  name.toLowerCase().includes(inputSearch.toLowerCase()) && name.toLowerCase() != inputSearch.toLowerCase()) : [];
+
+    const handleClickEvent = (event) =>{
+        setshowhint(true)
+        setInputSearch(event)
+
+        history.current.push(event)
+
+        console.log(history.current)
+
+    }
+
+    const eventHistory = () =>{
+        const riwayat= [...history.current]
+        setShowHistory(riwayat)
+        alert( "You have been search before: "+showHistory.join(" , "))
+        
+    }
 
     return(
         <nav>
             <ul>
                 <li>Home</li>
-                <input type="text" placeholder='search user' value={inputSearch} onChange={(e) => setInputSearch(e.target.value)}/>
+                <li style={{ position: 'relative' }}>
+                     <input type="text" placeholder='search user' 
+                     value={inputSearch} 
+                     onChange={(e) => {{setInputSearch(e.target.value)} setshowhint(true)}} 
+                     onFocus = {() => setshowhint(true)} />
+
+                     <ul className='inputHint'>
+                        {hints.map((name,index) => (
+                            <li key={index} onClick={() => handleClickEvent(name)}>
+                                {name}
+                            </li>
+                        ))}
+                     </ul>
+                </li>
                 <li>Profile</li>
             </ul>
-            <button>Login</button>
+            <button onClick={eventHistory}>History</button>
         </nav>
     )
 }

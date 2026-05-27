@@ -12,18 +12,22 @@ import { createContext } from "react"
 import { searchcontex } from "./contexts/inputContext"
 
 function App() {
+  //sistem
   const [user,setuser] = useState([])
   const [error,seterror] = useState("")
   const [loading,setloading] = useState(true)
-  const [login,setslogin] = useState(false)
-  const [inputSearch,setInputSearch] = useState("")
-
-
-  const [selectedUser, setSelectedUser] = useState(null)
-
+  const [login,setslogin] = useState(false) 
+  
   //tombol
   const [likedUsers, setLikedUsers] = useState([]) 
   const [followedUsers, setFollowedUsers] = useState([]) 
+  
+  //input text
+  const [hint, sethint] = useState([])
+  const [inputSearch,setInputSearch] = useState("")
+  
+  //profile masing masing
+  const [selectedUser, setSelectedUser] = useState(null)
 
 useEffect(() => {
   async function PengambilanAPI() {
@@ -37,7 +41,7 @@ useEffect(() => {
           const data = await getAPI.json()
 
           setuser(data)
-          // console.log(user)
+
 
         }
         catch(err){
@@ -71,20 +75,22 @@ useEffect(() => {
 
  if (loading) {
     return (
-      <searchcontex.Provider value={{inputSearch,setInputSearch}}>
+      <searchcontex.Provider value={{inputSearch,setInputSearch,getName: []}}>
         <Navbar />
         <h2>Sedang memanggil data...</h2>
       </searchcontex.Provider>
     )
   }
-  
+    const getName = user.map((item) => item.name)
+    // console.log(getName)
 
   const filerInput = user.filter((item) =>(
     item.name.toLowerCase().includes(inputSearch.toLowerCase())
   ))
 
+
   return (
-    <searchcontex.Provider value={{inputSearch,setInputSearch}}>
+    <searchcontex.Provider value={{inputSearch,setInputSearch,getName}}>
       <Navbar/>
       
 
