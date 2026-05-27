@@ -1,0 +1,153 @@
+/* === UserDetail.css === */
+
+.halaman-detail {
+  padding: 24px 20px;
+  max-width: 580px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.button-kembali {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  /* padding: 8px 16px; */
+  background: transparent;
+  color: #60a5fa;
+  border: 1px solid #60a5fa;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.button-kembali:hover {
+  background: #60a5fa;
+  color: #0f172a;
+}
+
+/* Kartu profil */
+.kartu-profil {
+  background: #0f172a;
+  border: 1px solid #1e3a5f;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 4px 24px rgba(14, 65, 120, 0.25);
+}
+
+/* Kepala profil */
+.kepala-profil {
+  margin-bottom: 4px;
+}
+
+.nama-pengguna {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0 0 4px 0;
+}
+
+.handle-pengguna {
+  font-size: 14px;
+  color: #60a5fa;
+  margin: 0;
+}
+
+.garis-pemisah {
+  border: none;
+  border-top: 1px solid #1e3a5f;
+  margin: 16px 0;
+}
+
+/* Baris info */
+.baris-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.label-info {
+  color: #60a5fa;
+  font-weight: 600;
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.teks-info {
+  color: #cbd5e1;
+}
+
+.tautan-info {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.tautan-info:hover {
+  text-decoration: underline;
+}
+
+
+.judul {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #475569;
+  margin: 20px 0 10px 0;
+}
+
+
+.baris-tombol {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.button-suka,
+.button-ikuti {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.button-suka:hover,
+.button-ikuti:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+
+.button-suka {
+  background: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
+}
+
+.button-suka.sudah-suka {
+  background: #ff4d4d;
+  color: #fff;
+  border-color: transparent;
+}
+
+
+.button-ikuti {
+  background: #1d4ed8;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.button-ikuti.sudah-ikuti {
+  background: #0369a1;
+  color: #fff;
+}
