@@ -64,3 +64,4 @@ pnpm run dev
 ```
 
 **PENJELASAN**
+ <span style="height: 15px; width: 15px; background-color: #ff0000; border-radius: 50%; display: inline-block;">Components: Berisi semua komponent yang di perlukan dalam page seperti Navbar,footer dan user details</span>
