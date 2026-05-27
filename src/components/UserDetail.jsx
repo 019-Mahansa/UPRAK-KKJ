@@ -23,7 +23,7 @@ export default function UserDetail({ user, onBack, isLiked, onToggleLike, isFoll
           <span className="teks-info">{user.email}</span>
         </div>
         <div className="baris-info">
-          <span className="label-info">Telepon</span>
+          <span className="label-info">Phone Number</span>
           <span className="teks-info">{user.phone}</span>
         </div>
         <div className="baris-info">
@@ -39,7 +39,7 @@ export default function UserDetail({ user, onBack, isLiked, onToggleLike, isFoll
         </div>
  
 
-        <p className="judul">Alamat</p>
+        <p className="judul">Address</p>
         <div className="baris-info">
           <span className="teks-info">
             {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}
@@ -47,7 +47,7 @@ export default function UserDetail({ user, onBack, isLiked, onToggleLike, isFoll
         </div>
  
 
-        <p className="judul">Perusahaan</p>
+        <p className="judul">Company</p>
         <div className="baris-info">
           <span className="teks-info">
             {user.company.name} — <em>"{user.company.catchPhrase}"</em>
