@@ -1,6 +1,6 @@
 # UPRAK KKJ
 
-Uprak KKJ kali ini mengharuskan kami untuk menggunakan react + hooks untuk membuat sebuah media sosial sederhana
+Uprak KKJ kali ini mengharuskan kami untuk menggunakan react + hooks untuk membuat sebuah media sosial sederhana dengan menggunakan API dari https://jsonplaceholder.typicode.com/users sebagai data utama
 
 ## Instalasi
 
@@ -23,3 +23,44 @@ NPM
 ```bash
 npm install
 ```
+
+Setelah itu run di terminal dengan menggunakan run dev
+
+NPM / PNPM
+
+```bash
+npm run dev
+atau
+pnpm run dev
+```
+
+# Alur kode
+
+## hierarki kode
+```bash
+📦src
+ ┣ 📂assets
+ ┃ ┣ 📂readme-image
+ ┃ ┣ 📜hero.png
+ ┃ ┣ 📜icon.jpeg
+ ┃ ┣ 📜icon.png
+ ┃ ┣ 📜react.svg
+ ┃ ┗ 📜vite.svg
+ ┣ 📂components
+ ┃ ┣ 📂css
+ ┃ ┃ ┣ 📜UserDetail.css
+ ┃ ┃ ┣ 📜card.css
+ ┃ ┃ ┣ 📜footer.css
+ ┃ ┃ ┗ 📜navbar.module.css
+ ┃ ┣ 📜UserDetail.jsx
+ ┃ ┣ 📜card.jsx
+ ┃ ┣ 📜footer.jsx
+ ┃ ┗ 📜navabar.jsx
+ ┣ 📂contexts
+ ┃ ┗ 📜inputContext.jsx
+ ┣ 📜App.jsx
+ ┣ 📜app.css
+ ┗ 📜main.jsx
+```
+
+*PENJELASAN*
