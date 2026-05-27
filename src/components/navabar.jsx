@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import './css/navbar.module.css'
+import './css/navbar.css'
 import { searchcontex } from '../contexts/inputContext'
 
 export default function Navbar(){
