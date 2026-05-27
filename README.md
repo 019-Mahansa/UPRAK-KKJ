@@ -63,4 +63,4 @@ pnpm run dev
  ┗ 📜main.jsx
 ```
 
-*PENJELASAN*
+**PENJELASAN**
