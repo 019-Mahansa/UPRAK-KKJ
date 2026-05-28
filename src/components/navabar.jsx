@@ -27,10 +27,15 @@ export default function Navbar(){
         
     }
 
+    const clearSearch = () =>{
+        setInputSearch("");
+        setshowhint(false);
+    }
+
     return(
         <nav>
             <ul>
-                <li>Home</li>
+                <li onClick={clearSearch}>Home</li>
                 <li style={{ position: 'relative' }}>
                      <input type="text" placeholder='search user' 
                      value={inputSearch} 
