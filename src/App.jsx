@@ -104,7 +104,7 @@ useEffect(() => {
         <div className="bagan">
           {filerInput.map((item) => (
 
-            <div key={item.id} onClick={() => setSelectedUser(item)} style={{ cursor: 'pointer' }}> 
+            <div key={item.id} onClick={() => setSelectedUser(item)} > 
               <Card
                 name={item.name}
                 email={item.email}
