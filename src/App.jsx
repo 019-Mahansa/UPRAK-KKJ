@@ -55,6 +55,22 @@ useEffect(() => {
       PengambilanAPI()
   },[])
 
+  
+  if (loading) {
+    return (
+      <searchcontex.Provider value={{inputSearch,setInputSearch,getName: []}}>
+        <Navbar />
+        <h2>Sedang memanggil data...</h2>
+      </searchcontex.Provider>
+    )
+  }
+  const getName = user.map((item) => item.name)
+  // console.log(getName)
+  
+  const filerInput = user.filter((item) =>(
+    item.name.toLowerCase().includes(inputSearch.toLowerCase())
+  ))
+  
   const likeButton = (id) => {
     if (likedUsers.includes(id)) {
       setLikedUsers(likedUsers.filter(userId => userId !== id))
@@ -71,27 +87,10 @@ useEffect(() => {
     }
   }
 
- if (loading) {
-    return (
-      <searchcontex.Provider value={{inputSearch,setInputSearch,getName: []}}>
-        <Navbar />
-        <h2>Sedang memanggil data...</h2>
-      </searchcontex.Provider>
-    )
-  }
-    const getName = user.map((item) => item.name)
-    // console.log(getName)
-
-  const filerInput = user.filter((item) =>(
-    item.name.toLowerCase().includes(inputSearch.toLowerCase())
-  ))
-
-
   return (
     <searchcontex.Provider value={{inputSearch,setInputSearch,getName}}> 
       <Navbar/>
       
-
       {selectedUser ? (
         <UserDetail 
           user={selectedUser} 
