@@ -75,7 +75,12 @@ App.jsx: File utama yang berisi Sistem dan penyusunan komponen
 
 **CARA KERJA**
 
-1.Kita memanggil data dari API menggunakan fetch() dengan menggunakan useEffect agar setiap kali web di refresh maka kode akan jalan terus
+1. Kita memanggil data dari API menggunakan fetch() dengan menggunakan useEffect agar setiap kali web di refresh maka kode akan jalan terus. Dan menyimpannya di dalam useState
 
-<img src="./src/assets/readme-image/FetchIMG.png" style="width=200px">
+<img src="./src/assets/readme-image/StateUserandother.png" style="width=100px">
+<img src="./src/assets/readme-image/FetchIMG.png" style="width=100px">
+
+2. Setelah API berhasil terpanggil, sekarang kita membuat tempat(card) untuk kita tampilkan ke UI
+
+<img src="./src/assets/readme-image/Card.png" style="width=100px">
 

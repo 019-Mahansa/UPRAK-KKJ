@@ -1,12 +1,13 @@
 import React from 'react';
 import './css/card.css';
 
+
 const Card = ({name,initials,email,addressCity,addressStreet}) => {
 
   return (
     <div className="card">
       <div className="avatar" aria-label="User initials">
-        {initials}
+        {initials} //memanggil props
       </div>
       <div className="info">
         <h3 className="name">{name}</h3>

@@ -14,9 +14,7 @@ import { searchcontex } from "./contexts/inputContext"
 function App() {
   //sistem
   const [user,setuser] = useState([])
-  const [error,seterror] = useState("")
-  const [loading,setloading] = useState(true)
-  const [login,setslogin] = useState(false) 
+  const [loading,setloading] = useState(true) 
   
   //tombol
   const [likedUsers, setLikedUsers] = useState([]) 
