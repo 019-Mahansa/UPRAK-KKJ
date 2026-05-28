@@ -4,9 +4,9 @@ import { searchcontex } from '../contexts/inputContext'
 
 export default function Navbar(){
     const {inputSearch, setInputSearch, getName} = useContext(searchcontex)
-    const history = useRef([])
     const [showhint,setshowhint] = useState(false)
     const [showHistory, setShowHistory]= useState([])
+    const history = useRef([])
 
     const hints = inputSearch && getName.length > 0 ? getName.filter(name =>  name.toLowerCase().includes(inputSearch.toLowerCase()) && name.toLowerCase() != inputSearch.toLowerCase()) : [];
 

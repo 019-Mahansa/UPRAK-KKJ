@@ -101,7 +101,7 @@ useEffect(() => {
           isFollowed={followedUsers.includes(selectedUser.id)}
           onToggleFollow={followButton}
         />
-      ) : (
+      ) : ( // ternary
         <div className="bagan">
           {filerInput.map((item) => (
 
