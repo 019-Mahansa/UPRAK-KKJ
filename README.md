@@ -90,10 +90,11 @@ Kita menggunakan async function agar sistem yang lain selain pengambilan API dap
 
 3. Kemudian kita isi card tersebut dengan menggunakan function map() untuk mengeluarkan semua isi data dari array. Lalu seperti yang terlihat di bawah gambar terdapat function setSelectedUser(item) yang dimana ini akan kita gunakan nanti untuk mengvalidasi input teks
 
-<img src="./src/assets/readme-image/MemasukanDatakeCard.png">
+<img src="./src/assets/readme-image/MemasukanDatakeCard.png" style="width=100px">
 
 4.Sistem Pencarian (Search & Filter) dengan Context API
 Kita membuat fitur pencarian dengan memanfaatkan filter() pada array user berdasarkan state inputSearch. Agar komponen Navbar dan App bisa saling berbagi data input tanpa perlu prop drilling yang rumit, kita menggunakan Context API (searchcontex).
 
-<img src="./src/assets/readme-image/filerinput.png" style="width:100px">
-<img src="./src/assets/readme-image/contex.png" style="width:100px">
+<img src="./src/assets/readme-image/filerinput.png" style="width=100px">
+
+<img src="./src/assets/readme-image/contex.png" style="width=100px">
