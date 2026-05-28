@@ -3,7 +3,7 @@ import './css/navbar.css'
 import { searchcontex } from '../contexts/inputContext'
 
 export default function Navbar(){
-    const {inputSearch, setInputSearch, getName} = useContext(searchcontex)
+    const {inputSearch, setInputSearch, getName} = useContext(searchcontex) //menyambungkan
     const [showhint,setshowhint] = useState(false)
     const [showHistory, setShowHistory]= useState([])
     const history = useRef([])
