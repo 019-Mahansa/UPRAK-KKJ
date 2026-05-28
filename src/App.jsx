@@ -88,7 +88,7 @@ useEffect(() => {
 
 
   return (
-    <searchcontex.Provider value={{inputSearch,setInputSearch,getName}}> //memasukan value dengan .provider
+    <searchcontex.Provider value={{inputSearch,setInputSearch,getName}}> 
       <Navbar/>
       
 
@@ -101,7 +101,7 @@ useEffect(() => {
           isFollowed={followedUsers.includes(selectedUser.id)}
           onToggleFollow={followButton}
         />
-      ) : ( // ternary
+      ) : ( 
         <div className="bagan">
           {filerInput.map((item) => (
 

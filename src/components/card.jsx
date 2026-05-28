@@ -7,7 +7,7 @@ const Card = ({name,initials,email,addressCity,addressStreet}) => {
   return (
     <div className="card">
       <div className="avatar" aria-label="User initials">
-        {initials} //memanggil props
+        {initials} 
       </div>
       <div className="info">
         <h3 className="name">{name}</h3>
