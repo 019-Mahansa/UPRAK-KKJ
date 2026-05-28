@@ -23,7 +23,7 @@ export default function Navbar(){
     const eventHistory = () =>{
         const riwayat= [...history.current]
         setShowHistory(riwayat)
-        alert( "You have been search before: "+showHistory.join(" , "))
+        alert( "You have been search before: "+riwayat.join(" , "))
         
     }
 
