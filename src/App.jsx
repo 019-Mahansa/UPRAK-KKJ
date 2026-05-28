@@ -88,7 +88,7 @@ useEffect(() => {
 
 
   return (
-    <searchcontex.Provider value={{inputSearch,setInputSearch,getName}}>
+    <searchcontex.Provider value={{inputSearch,setInputSearch,getName}}> //memasukan value dengan .provider
       <Navbar/>
       
 
