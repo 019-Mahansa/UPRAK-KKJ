@@ -49,6 +49,6 @@ Digunakan untuk membagikan state pencarian (`inputSearch` dan `setInputSearch`) 
 
 
 ### D. useRef
-Digunakan di dalam `navabar.jsx` untuk menyimpan array data riwayat pencarian (`history.current`). Penggunaan `useRef` di sini sangat penting karena perubahan data di dalamnya tidak akan memicu komponen *Navbar* untuk melakukan *re-render*. Hal ini memastikan kursor pengguna tidak kehilangan fokus (*lose focus*) saat mereka sedang asyik mengetik di dalam kolom input.
+Digunakan di dalam `navabar.jsx` untuk menyimpan array data riwayat pencarian (`history.current`). Penggunaan `useRef` di sini sangat penting karena perubahan data di dalamnya tidak akan memicu komponen *Navbar* untuk melakukan *re-render*.
 
 <img src="./src/assets/readme-image/buktiUseref.png" >
