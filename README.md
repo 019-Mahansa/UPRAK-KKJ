@@ -65,5 +65,17 @@ pnpm run dev
 
 **PENJELASAN**
 
+Assets: Berisi semua gambar yang di perlukan dalam website
 
-<span style="height: 15px; width: 15px; background-color: #ff0000; border-radius: 50%; display: inline-block;">Components: Berisi semua komponent yang di perlukan dalam page seperti Navbar,footer dan user details</span>
+Components: Berisi semua komponent yang di perlukan dalam page seperti Navbar,footer dan user details
+
+Contexts: Berisi sebagai wadah utama pembuatan context dengan useContext
+
+App.jsx: File utama yang berisi Sistem dan penyusunan komponen
+
+**CARA KERJA**
+
+1.Kita memanggil data dari API menggunakan fetch() dengan menggunakan useEffect agar setiap kali web di refresh maka kode akan jalan terus
+
+<img src="./src/assets/readme-image/FetchIMG.png" style="width=200px">
+
